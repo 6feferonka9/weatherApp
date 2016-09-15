@@ -1,0 +1,37 @@
+<App>
+  <Font File="fonts/weather.ttf" ux:Global="weather" />
+  <Font File="fonts/sfregular.ttf" ux:Global="sf" />
+  <JavaScript File="main.js" />
+  <ClientPanel>
+    <WhileTrue Value="{displayContent}" >
+      <DockPanel Name="content" Background="{background}" > 
+        <Panel Height="260" Dock="Top" >
+          <Text Value="{icon}" Alignment="Center" Font="weather" FontSize="150" Margin="0,20,0,0" Color="{iconColor}" />
+        </Panel>
+        <StackPanel Height="200" Dock="Top" Margin="0,30,0,0" >
+          <Text Value="{summary}" Alignment="Center" FontSize="18" Opacity="0.7" Color="{textColor}" />
+          <Text Value="{temperature}" Alignment="Center" FontSize="90" TextColor="{textColor}" Margin="0,15,0,15" Font="sf"/>
+          <Text Value="{location}" Alignment="Center" FontSize="12" Opacity="0.7" Color="{textColor}" />
+        </StackPanel>
+        <Text Value="Powered by forecast.io" Alignment="Center" FontSize="12" Opacity="0.5" Dock="Bottom" Color="{textColor}" />
+      </DockPanel>
+      <AddingAnimation>
+        <Change content.Opacity="0" Duration=".5" Easing="CircularInOut" />
+      </AddingAnimation>    
+      <RemovingAnimation>
+        <Change content.Opacity="0" Duration=".2" Easing="CircularInOut" />
+      </RemovingAnimation>         
+    </WhileTrue>
+    
+    <WhileFalse Value="{displayContent}" >
+      <Text Value="Fetching data from server..." Alignment="Center" Name="gettingData" />   
+      <AddingAnimation>
+        <Change gettingData.Opacity="0" Duration=".5" Easing="CircularInOut" />
+      </AddingAnimation>    
+      <RemovingAnimation>
+        <Change gettingData.Opacity="0" Duration=".2" Easing="CircularInOut" />
+      </RemovingAnimation>         
+    </WhileFalse>
+  </ClientPanel>
+  
+</App>

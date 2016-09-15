@@ -1,0 +1,80 @@
+{
+  "clear-day": {
+      "background": "#00BBFF",
+      "icon": "\uE800",
+      "iconColor": "#FFED43",
+      "textColor": "#FFFFFF"
+  },
+  "clear-night": {
+      "background": "#222131",
+      "icon": "\uE801",
+      "iconColor": "#EAE4E8",
+      "textColor": "#FFFFFF"
+    },
+  "rain": {
+      "background": "#EAE4E8",
+      "icon": "\uE802",
+      "iconColor": "#CCCCCC",
+      "textColor": "#3c3c3c"
+    },
+  "snow": {
+      "background": "#86DB88",
+      "icon": "\uE803",
+      "iconColor": "#FFFEFF",
+      "textColor": "#FFFFFF"
+    },
+  "sleet": {
+      "background": "#EAE4E8",
+      "icon": "\uE803",
+      "iconColor": "#CBCBCB",
+      "textColor": "#3c3c3c"
+    },
+  "wind": {
+      "background": "#EAE4E8",
+      "icon": "\uE804",
+      "iconColor": "#CBCBCB",
+      "textColor": "#3c3c3c"
+    },
+  "fog": {
+      "background": "#EAE4E8",
+      "icon": "\uE805",
+      "iconColor": "#CBCBCB",
+      "textColor": "#3c3c3c"
+    },
+  "cloudy": {
+      "background": "#00BBFF",
+      "icon": "\uE806",
+      "iconColor": "#FFFFFF",
+      "textColor": "#FFFFFF"
+    },
+  "partly-cloudy-day": {
+      "background": "#00BBFF",
+      "icon": "\uE807",
+      "iconColor": "#FFFFFF",
+      "textColor": "#FFFFFF"
+    },
+  "partly-cloudy-night": {
+      "background": "#434343",
+      "icon": "\uE808",
+      "iconColor": "#222222",
+      "textColor": "#FFFFFF"
+    },
+  "hail": {
+      "background": "#EAE4E8",
+      "icon": "\uE803",
+      "iconColor": "#CCCCCC",
+      "textColor": "#3c3c3c"
+    },
+  "thunderstorm": {
+      "background": "#EAE4E8",
+      "icon": "\uE809",
+      "iconColor": "#CCCCCC",
+      "textColor": "#3c3c3c"
+    },
+  "tornado": {
+      "background": "#EAE4E8",
+      "icon": "\uE803",
+      "iconColor": "#CCCCCC",
+      "textColor": "#3c3c3c"
+    }
+}
